@@ -160,6 +160,10 @@ class App extends React.Component<any, any> {
     ...INITIAL_STATE,
   };
 
+  public componentDidMount(): void {
+    this.connect();
+  }
+
   public connect = async () => {
     // bridge url
     const bridge = "https://bridge.walletconnect.org";
