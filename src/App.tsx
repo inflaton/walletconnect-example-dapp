@@ -655,11 +655,12 @@ class App extends React.Component<any, any> {
               <SLanding center>
                 <h3>
                   {`Deep Linking Example`}
-                  <br />
+                </h3>
+                <h5>
                   {`Powered by WalletConnect`}
                   <br />
                   <span>{`v${process.env.REACT_APP_VERSION}`}</span>
-                </h3>
+                </h5>
                 <SButtonContainer>
                   <SConnectButton left onClick={this.connect} fetching={fetching}>
                     {"Connect to WalletConnect"}
